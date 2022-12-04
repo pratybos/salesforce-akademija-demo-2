@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": false
+    },
+    {
+      "path": "playground",
+      "default": false
+    },
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "saleforce-akademija-demo",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0"
+}
