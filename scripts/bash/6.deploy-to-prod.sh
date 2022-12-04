@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-sfdx force:source:deploy -p ./force-app/
+sfdx force:source:deploy -p ./force-app/ -u sf-akademija-prod --testlevel=RunLocalTests
