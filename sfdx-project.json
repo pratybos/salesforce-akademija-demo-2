@@ -5,11 +5,11 @@
       "default": false
     },
     {
-      "path": "playground",
+      "path": "force-app-scratch",
       "default": false
     },
     {
-      "path": "force-app",
+      "path": "playground",
       "default": true
     }
   ],
