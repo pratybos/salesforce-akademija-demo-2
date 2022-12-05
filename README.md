@@ -71,6 +71,16 @@ Pasirinkti WebStorm ir įdiegti.
 1. Paieškoje įvesti „IlluminatedCloud“
 1. Paspausti `Install` prie „IlluminatedCloud 2“.
 
+### Susiskonfigūruoti IlluminatedCloud
+
+1. Spauskite betkurioje vietoje, tarkime ant projekto pavadinimo kairėje ir kontekstiniame meniu išsirinkite 
+`Illuminated cloud` -> `Configure application`
+1. Atsidariusiame lange pasirinkti `Salesforce DX`
+1. Laukelyje `Salesforce CLI executable` įrašyti adresą, kur įdiegtas sfdx
+   * Linux tai galima sužinoti parašius komandą `which sfdx`
+   * Susirasti galima paspaudus aplanko ikonėlę `Salesforce CLI executable` laukelyje
+1. Uždėkite visas varneles sekcijoje `Automatically push to server on` 
+
 ## Pasiruošimas darbui su projektu
 
 ### Užsiregistruoti github
@@ -124,7 +134,7 @@ Paspauskite `Trust project`
 Šis žingsnis daromas vieną kartą, pradedant dirbti su projektu.
 
 1. Narsyklėje atsidarykite https://login.salesforce.com
-1. Prisijunkite su savo dev org prisijungimo vardu ir   slaptažodžiu.
+1. Prisijunkite su savo dev org prisijungimo vardu ir slaptažodžiu.
 1. Atidarykite `Setup`.
 1. Paieškoje įvesite `Dev Hub`
 1. `Enable Dev Hub` turi rodyti `enabled`
