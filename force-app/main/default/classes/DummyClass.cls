@@ -4,4 +4,9 @@
 
 public with sharing class DummyClass {
 
+    public static final String world = 'world';
+
+    public static void doNothing() {
+        System.debug('Hello ' + world);
+    }
 }
