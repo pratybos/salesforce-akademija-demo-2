@@ -63,6 +63,7 @@ Pasirinkti WebStorm ir įdiegti.
 1. Jei dar niekada nesinaudojote WebStorm - pirmą kartą prašys licenzijos.
     * Jei turite, įveskite
     * Jei neturite galite užsiregistruoti ir bandyti 30 dienų.
+      * Registracijai naudokite tą naršyklę, kur atsidaro paspaudus login mygtuką.  
 1. Jei dar niekada nebuvote atidarę jokio projekto su webstorm, jums rodys kitokį langą, nei įprastai, jame nėra `File`
    meniu. Tokiu atveju, sukurkite naują projektą, nesvarbu kokį, tai daroma tik tam, kad gautumėte įprastinį webstorm
    langą.
