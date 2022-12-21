@@ -42,3 +42,8 @@ $RECYCLE.BIN/
 ######
 playground/
 tmp/
+
+
+.idea/
+
+IlluminatedCloud/
