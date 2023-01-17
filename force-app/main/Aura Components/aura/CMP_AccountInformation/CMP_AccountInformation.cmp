@@ -1,0 +1,40 @@
+<!--
+ - Created by JurgitaG on 1/17/2023.
+ -->
+
+<aura:component description="CMP_AccountInformation" controller="CTRL_AccountInformation" implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="name" type="String" default="Jurgita"/>
+    <aura:attribute name="newContact" type="Contact" default="{
+    'sobjectType': 'Contact',
+    'FirstName':'',
+    'AccountId':'',
+    'LastName':'',
+    'Phone':'',
+    'Email':'',
+    }"/>
+
+    <lightning:card iconName="standard:contact">
+        <lightning:layout>
+            <lightning:layoutItem size="4" class="slds-p-around_x-small">
+                <lightning:input type="text" value="{!v.newContact.FirstName}" label="FirstName" />
+                <lightning:input type="text" value="{!v.newContact.LastName}" label="LastName" required="true" />
+            </lightning:layoutItem>
+            <lightning:layoutItem size="8" class="slds-p-around_x-small">
+                <lightning:input type="email" value="{!v.newContact.Email}" label="Email" />
+                <lightning:input type="tel" value="{!v.newContact.Phone}" label="Phone" />
+                <lightning:button label="Create Contact" onclick="{!c.handleCreateContact}" class="red-button"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+
+
+    <!--    <lightning:recordEditForm objectApiName="Contact">-->
+    <!--        <lightning:messages />-->
+    <!--        <lightning:inputField fieldName="AccountId" value="{!v.recordId}" disabled="true" />-->
+    <!--        <aura:iteration items="{!v.fields}" var="field">-->
+    <!--            <lightning:inputField fieldName="{!field}"></lightning:inputField>-->
+    <!--        </aura:iteration>-->
+    <!--        <lightning:button class="slds-m-top_small" type="submit" label="Create new" />-->
+    <!--    </lightning:recordEditForm>-->
+</aura:component>
