@@ -1,0 +1,23 @@
+<!--
+ - Created by JurgitaG on 1/12/2023.
+ -->
+
+<apex:page id="VF_Opportunity" controller="CTRL_OpportunityWithProducts">
+    {! greeting}
+    <apex:pageBlock>
+        <apex:pageBlockSection title="My Content Section" columns="2">
+            <apex:outputField value="{! opportunity.Name}"/>
+            <apex:outputField value="{! opportunity.StageName}"/>
+            <apex:outputField value="{! opportunity.CloseDate}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+    <apex:pageBlock title="Opportunity Products">
+        <apex:pageBlockTable value="{!OpportunityProducts}" var="product">
+            <apex:column value="{!product.Name}"/>
+            <apex:column value="{!product.Quantity}"/>
+            <apex:column value="{!product.UnitPrice}"/>
+            <apex:column value="{!product.TotalPrice}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
