@@ -1,0 +1,30 @@
+<!--
+ - Created by JurgitaG on 1/12/2023.
+ -->
+
+<apex:page id="VF_CompanyInformation" standardController="Account">
+    <style>
+        .color
+    </style>
+
+<apex:image url="{! $Resource.statement}" width="200" height="200" />
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockSection title="My Content Section" columns="2">
+                    <apex:inputField value="{! Account.Name}"/>
+                    <apex:inputField value="{! Account.Active__c}"/>
+                    <apex:inputField value="{! Account.BillingStreet}"/>
+                    <apex:commandButton value="Save Account" action="{!save}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+
+    <apex:pageBlock title="Contacts">
+        <apex:pageBlockTable value="{!Account.Contacts}" var="contact">
+            <apex:column value="{!contact.Name}"/>
+            <apex:column value="{!contact.Title}"/>
+            <apex:column value="{!contact.Phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+</apex:page>
