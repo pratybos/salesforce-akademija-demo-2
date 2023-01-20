@@ -1,0 +1,14 @@
+<!--
+ - Created by Armandas on 2023-01-18.
+ -->
+
+<!-- List Component -->
+<template>
+    <lightning-card>
+        <lightning-input label="Enter an item" onchange={handleInput}></lightning-input>
+        <button onclick={addItem}>Add Item</button>
+        <template for:each={items} for:item="item">
+            <p key={item}>{item}</p>
+        </template>
+    </lightning-card>
+</template>

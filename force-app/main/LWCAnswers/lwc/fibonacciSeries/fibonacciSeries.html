@@ -1,0 +1,14 @@
+<!--
+ - Created by Armandas on 2023-01-19.
+ -->
+
+<!-- Fibonacci Series -->
+<template>
+    <lightning-card >
+        <lightning-input type="number" label="Enter a number" onchange={handleNumber}></lightning-input>
+        <button onclick={generateFibonacci}>Generate Fibonacci</button>
+        <template for:each={fibonacciSeries} for:item="number">
+            <p key={number}>{number}</p>
+        </template>
+    </lightning-card>
+</template>
