@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Hello World Api</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Hello World Api</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <property name="helloName" type="String" label="Who to say hello to"></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
