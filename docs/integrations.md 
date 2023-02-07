@@ -1,0 +1,32 @@
+# Integrations
+
+## SF services
+
+### Autorizacija
+
+https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_passwd.htm
+ ```
+ sfdx force:user:display
+
+ sfdx force:user:password:generate
+ ```
+
+https://www.sfdcstop.com/2019/01/how-to-connect-to-salesforce-with.html
+
+### Standartiniai Servisai
+
+https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce
+
+### Custom REST service
+
+Pavyzdys  force-app/main/integrations/rest/classes/REST_GetAccounts.cls
+
+## Callout
+
+
+
+
+
+## List of Free APIs Without Key or Authentication
+
+https://apipheny.io/free-api/

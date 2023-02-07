@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "2b9a4fe7-f2a8-465d-9cb9-5b2a4836f0a6",
+		"name": "Akademija",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test-i86bbfa1gzgg@example.com ",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "n-bfmmsw7Gimm",
+							"type": "default"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.salesforce.com/services/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"test",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccounts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{main_url}}/services/apexrest/GetAccounts",
+					"host": [
+						"{{main_url}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"GetAccounts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "main_url",
+			"value": "https://customization-business-2275-dev-ed.scratch.my.salesforce.com",
+			"type": "default"
+		},
+		{
+			"key": "client_id",
+			"value": "3MVG9KlmwBKoC7U0lOcFnZAb56_peNsllz6DJ1hXj1arNR3_hW4CmReDKGhIm5w2psVijOqDIhYEGsIKF65cw\n",
+			"type": "default"
+		},
+		{
+			"key": "client_secret",
+			"value": "C6005286AD86854E1472862657C5B94D1425800FA19E0FCD78287B66C3CF4A6D",
+			"type": "default"
+		},
+		{
+			"key": "password",
+			"value": "n-bfmmsw7Gimm",
+			"type": "default"
+		},
+		{
+			"key": "username",
+			"value": "test-i86bbfa1gzgg@example.com",
+			"type": "default"
+		},
+		{
+			"key": "token",
+			"value": "00D1X000000HKZz!AQ0AQB4_zxgdG5H761scje7yocrPIp3t6ILGIsA1xGDVvqa3JCH7d.g652xR3rnu09mOmMzruAm.Gnc.vjvnlV3yzKGQRLb1",
+			"type": "default"
+		}
+	]
+}
