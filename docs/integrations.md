@@ -16,6 +16,7 @@ ir komandomis:
  sfdx force:user:password:generate
  ```
 
+
 #### Connected app
 
 Instrukcijos pagal https://www.sfdcstop.com/2019/01/how-to-connect-to-salesforce-with.html.
