@@ -6,6 +6,9 @@ public with sharing class DummyClass {
 
     public static final String world = 'world';
 
+    /**
+     * does nothing
+     */
     public static void doNothing() {
         System.debug('Hello ' + world);
     }

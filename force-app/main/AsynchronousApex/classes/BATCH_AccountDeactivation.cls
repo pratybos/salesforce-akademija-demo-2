@@ -11,8 +11,8 @@ public class BATCH_AccountDeactivation implements Database.Batchable<Sobject>
 		return Database.getQueryLocator([
 				SELECT Id, Active__c
 				FROM Account
-				WHERE Active_Until__c <= TODAY
-				AND Active__c = 'Yes'
+//				WHERE Active_Until__c <= TODAY
+//				AND Active__c = 'Yes'
 		]);
 	}
 
@@ -20,7 +20,7 @@ public class BATCH_AccountDeactivation implements Database.Batchable<Sobject>
 	{
 		for (Account anAccount : accountList)
 		{
-			anAccount.Active__c ='No';
+//			anAccount.Active__c ='No';
 		}
 		countAccount += accountList.size();
 		update accountList;
